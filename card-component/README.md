@@ -23,8 +23,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: https://github.com/vanguard07/frontendMentor/blob/master/index.html
-- Live Site URL: https://vanguard07.github.io/frontendMentor/index.html
+- Solution URL: https://github.com/vanguard07/frontendMentor/tree/master/card-component
+- Live Site URL: https://vanguard07.github.io/frontendMentor/card-component/index.html
 
 ## My process
 
