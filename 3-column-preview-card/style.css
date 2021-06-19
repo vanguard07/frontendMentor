@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-orange: hsl(31, 77%, 52%);
+    --color-cyan: hsl(184, 100%, 22%);
+    --color-dark-cyan: hsl(179, 100%, 13%);
+    --color-white: hsla(0, 0%, 100%, 0.75);
+    --color-grey: hsl(0, 0%, 95%);
+    --ff-lexend: Lexend Deca;
+    --ff-big-shoulders-display: Big Shoulders Display;
+    --border-radius-top: 0.75rem 0.75rem 0 0;
+    --border-radius-bottom: 0 0 0.75rem 0.75rem;
+}
+
+.container {
+    font-family: var(--ff-lexend);
+    padding: 3rem;
+    background-color: var(--color-grey);
+}
+
+.card {
+    padding: 2rem;
+}
+
+.card > * {
+    padding: 1rem 0;
+}
+
+.card h1 {
+    font-family: var(--ff-big-shoulders-display);
+    color: var(--color-grey);
+    text-transform: uppercase;
+    font-size: xx-large;
+}
+
+.card p {
+    color: var(--color-white);
+    line-height: 1.6;
+}
+
+.card button {
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    border: none;
+    background-color: var(--color-grey);
+    font-family: var(--ff-lexend);
+    letter-spacing: 0.05em;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: inherit;
+    color: var(--color-grey);
+    outline: 2px solid var(--color-grey);
+}
+
+
+.orange {
+    background-color: var(--color-orange);
+}
+
+.orange > button {
+    color: var(--color-orange);
+}
+
+.cyan {
+    background-color: var(--color-cyan);
+}
+
+.cyan > button {
+    color: var(--color-cyan);
+}
+
+.dark-cyan {
+    background-color: var(--color-dark-cyan);
+}
+
+.dark-cyan > button {
+    color: var(--color-dark-cyan);
+}
+
+.orange > button:hover,
+.cyan > button:hover,
+.dark-cyan > button:hover {
+    color: var(--color-grey);
+}
+
+.border-radius-top {
+    border-radius: var(--border-radius-top);
+}
+
+.border-radius-last {
+    border-radius: var(--border-radius-bottom);
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+
+@media (min-width: 600px) {
+
+    .container {
+        display: flex;
+        margin: auto;
+        width: 100%;
+    }
+
+    .card {
+        max-width: 330px;
+    }
+
+    .border-radius-top {
+        border-radius: 0.75rem 0 0 0.75rem;
+        margin-left: auto;
+    }
+    
+    .border-radius-last {
+        border-radius: 0 0.75rem 0.75rem 0;
+        margin-right: auto;
+    }
+}
